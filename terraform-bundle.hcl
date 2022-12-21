@@ -3,5 +3,5 @@ terraform {
 }
 
 providers {
-    learn = ["0.0.1"]
+    whatsmyip = ["1.0.1"]
 }

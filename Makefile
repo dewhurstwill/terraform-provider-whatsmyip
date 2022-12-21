@@ -3,7 +3,7 @@ HOSTNAME=hashicorp.com
 NAMESPACE=wdew
 NAME=whatsmyip
 BINARY=terraform-provider-${NAME}
-VERSION=0.2
+VERSION=1.0.1
 OS_ARCH=darwin_arm64
 
 default: install
