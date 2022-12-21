@@ -22,8 +22,12 @@ provider "whatsmyip" {}
 
 data "whatsmyip" "public_ip" {}
 
-output "value" {
-  value = data.whatsmyip.public_ip
+output "ip" {
+  value = data.whatsmyip.public_ip.ip
+}
+
+output "country" {
+  value = data.whatsmyip.public_ip.country
 }
 ```
 
