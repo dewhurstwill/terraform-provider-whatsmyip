@@ -1,8 +1,6 @@
 package whatsmyip
 
 import (
-	"fmt"
-	"io/ioutil"
 	"net/http"
 	"time"
 	"encoding/json"
