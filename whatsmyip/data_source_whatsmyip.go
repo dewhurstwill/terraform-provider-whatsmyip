@@ -5,7 +5,7 @@ import (
 	"time"
 	"encoding/json"
 
-	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
 // dataSourceWhatsmyip is where we define the schema of the Terraform data source
@@ -13,7 +13,28 @@ func dataSourceWhatsmyip() *schema.Resource {
 	return &schema.Resource{
 		Read: whatsmyipRead,
 		Schema: map[string]*schema.Schema{
-			"value": {
+			"id": {
+				Type:     schema.TypeString,
+				Computed: true,
+				Elem: &schema.Schema{
+					Type: schema.TypeString,
+				},
+			},
+			"ip": {
+				Type:     schema.TypeString,
+				Computed: true,
+				Elem: &schema.Schema{
+					Type: schema.TypeString,
+				},
+			},
+			"cc": {
+				Type:     schema.TypeString,
+				Computed: true,
+				Elem: &schema.Schema{
+					Type: schema.TypeString,
+				},
+			},
+			"country": {
 				Type:     schema.TypeString,
 				Computed: true,
 				Elem: &schema.Schema{
