@@ -1,9 +1,9 @@
 TEST?=$$(go list ./... | grep -v 'vendor')
 HOSTNAME=hashicorp.com
-NAMESPACE=wdew
+NAMESPACE=dewhurstwill
 NAME=whatsmyip
 BINARY=terraform-provider-${NAME}
-VERSION=1.0.1
+VERSION=1.0.3
 OS_ARCH=darwin_arm64
 
 default: install

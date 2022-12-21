@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     whatsmyip = {
-      version = "0.0.1"
-      source = "hashicorp.com/wdew/whatsmyip"
+      version = "1.0.3"
+      source = "dewhurstwill/whatsmyip"
     }
   }
 }

@@ -3,5 +3,5 @@ terraform {
 }
 
 providers {
-    whatsmyip = ["1.0.2"]
+    whatsmyip = ["1.0.3"]
 }
